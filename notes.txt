@@ -21,3 +21,17 @@ const PostContext = createContext();           -- Component
 </PostContext>
 
 -------------------------
+
+# Consume the Context
+
+import { useContext } from "react"
+
+3. Consume the value from the context
+const { onClearPosts } = useContext(PostContext);       --- destructure the needed data
+
+
+# Refactor the Components using Context API
+    -- Remove all props directly from the components
+    -- Use Context API to get the needed value from the Provider (PostContext)
+
+-------------------------
