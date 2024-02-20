@@ -1,9 +1,9 @@
 # Create Context API
 
-import { useContext } from "react"
+import { createContext } from "react"
 
 1. Create Context API
-const PostContext = useContext();           -- Component
+const PostContext = createContext();           -- Component
 
 2. Provide value to the child components
     -- wrap all the child components inside the PostContext.Provider

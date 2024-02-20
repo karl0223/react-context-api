@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import { faker } from "@faker-js/faker";
 
 function createRandomPost() {
@@ -16,7 +16,7 @@ function App() {
   const [isFakeDark, setIsFakeDark] = useState(false);
 
   // 1.) Create Context API
-  const PostContext = useContext();
+  const PostContext = createContext();
 
   // Derived state. These are the posts that will actually be displayed
   const searchedPosts =
