@@ -1,0 +1,23 @@
+# Create Context API
+
+import { useContext } from "react"
+
+1. Create Context API
+const PostContext = useContext();           -- Component
+
+2. Provide value to the child components
+    -- wrap all the child components inside the PostContext.Provider
+    -- the value is an object and it must be the same values needed in the props
+
+<PostContext.Provider
+    value={{
+    posts: searchedPosts,
+    onAddPost: handleAddPost,
+    onClearPosts: handleClearPosts,
+    searchQuery,
+    setSearchQuery,
+    }}
+>{children}
+</PostContext>
+
+-------------------------
