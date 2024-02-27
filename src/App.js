@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { PostProvider, usePosts } from "./PostContext";
 import { faker } from "@faker-js/faker";
+import Test from "./Test";
 
 function createRandomPost() {
   return {
@@ -79,6 +80,7 @@ function Main() {
     <main>
       <FormAddPost />
       <Posts />
+      <Test />
     </main>
   );
 }
